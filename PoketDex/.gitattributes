@@ -1,0 +1,34 @@
+# ================== Line endings ==================
+# Auto-detect text files and normalize to LF in repo
+* text=auto
+
+# Shell scripts → LF
+*.sh    text eol=lf
+
+# Windows batch scripts → CRLF
+*.cmd   text eol=crlf
+
+# Maven wrapper scripts
+/mvnw   text eol=lf
+/mvnw.cmd text eol=crlf
+
+# Java source files → LF
+*.java  text eol=lf
+
+# XML, properties, y FXML → LF
+*.xml   text eol=lf
+*.properties text eol=lf
+*.fxml  text eol=lf
+
+# Markdown and text → LF
+*.md    text eol=lf
+*.txt   text eol=lf
+
+# ================ Binaries (no conversion) ================
+*.jar   binary
+*.png   binary
+*.jpg   binary
+*.gif   binary
+
+# =============== Exclude from archive ================
+docs/** export-ignore

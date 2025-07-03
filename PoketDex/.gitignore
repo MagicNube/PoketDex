@@ -1,35 +1,46 @@
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# === Build ===
+/target/
+/out/
 
-### IntelliJ IDEA ###
-.idea/
-*.iws
-*.iml
-*.ipr
+# Maven Wrapper
+/.mvn/wrapper/maven-wrapper.jar
+/.mvn/wrapper/maven-wrapper.properties
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Spring Boot “repackage” JARs (si usas spring-boot-maven-plugin)
+/*.jar
 
-### NetBeans ###
+# H2 database files
+*.mv.db
+*.trace.db
+
+# === IDEs ===
+# IntelliJ
+/.idea/
+/*.iws
+/*.iml
+/*.ipr
+
+# Eclipse
+/.classpath
+/.project
+/.settings/
+/.apt_generated
+
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# VS Code
+/.vscode/
 
-### Mac OS ###
+# === OS y utilidades ===
 .DS_Store
+Thumbs.db
+*.log
+
+# === Optional unignore of nested targets ===
+!**/src/main/**/target/
+!**/src/test/**/target/
