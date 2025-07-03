@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="PoketDex ESSENTIALS" pattern="file:pom.xml||file[PoketDex]:src/main/java//*||file[PoketDex]:src/main/resources//*" />
+</component>
