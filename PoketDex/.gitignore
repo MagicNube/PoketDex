@@ -15,7 +15,13 @@
 
 # === IDEs ===
 # IntelliJ
-/.idea/
+# Ignorar toda la carpeta .idea
+/.idea/**
+
+# Pero no scopes (compartido)
+!/.idea/scopes/
+!/.idea/scopes/**
+
 /*.iws
 /*.iml
 /*.ipr
